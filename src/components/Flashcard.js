@@ -7,8 +7,8 @@ class Flashcard extends Component {
 		super();
 
 		this.state = {
-			currentName: '',
-			currentFace: '',
+			currentName: 'Sophia',
+			currentFace: '/media/sophia.png',
 			flipped: false
 		};
 	}
