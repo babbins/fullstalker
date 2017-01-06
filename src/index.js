@@ -17,7 +17,7 @@ class App extends Component {
 			<div>
 				<Flashcard />
 			</div>
-		)
+		);
 	}
 }
 
