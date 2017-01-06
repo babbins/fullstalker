@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import Start from './components/Start.js';
 
 // Create a new component
 
@@ -14,7 +15,7 @@ class App extends Component {
 	render() {
 		return (
 			<div>
-				<Shit />
+				<Start />
 			</div>
 		)
 	}
