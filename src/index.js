@@ -10,6 +10,8 @@ class App extends Component {
 	constructor() {
 		super();
 		this.state = {
+			currentName: 'Sophia',
+			currentFace: '/media/sophia.png',
 		}
 	}
 
@@ -29,6 +31,6 @@ ReactDOM.render(
       <Route path="/" component={App}>
         <Route path="/start" component={Start}/>
         <IndexRedirect to="/start"/>
-				<Route path="/flashcard" component={flashcard}/>
+				<Route path="/flashcard" component={Flashcard} currentName={this.state.currentName} currentFace={this.state.currentState}/>
       </Route>
   </Router>, document.querySelector('.container'));

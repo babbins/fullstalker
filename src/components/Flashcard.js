@@ -8,8 +8,6 @@ class Flashcard extends Component {
 		super();
 
 		this.state = {
-			currentName: 'Sophia',
-			currentFace: '/media/sophia.png',
 			flipped: false
 		};
 
@@ -23,7 +21,7 @@ class Flashcard extends Component {
 	render() {
 		return (
 			<div>
-				<SingleFace currentName={this.state.currentName} currentFace={this.state.currentFace} flipped={this.state.flipped} />
+				<SingleFace currentName={this.props.currentName} currentFace={this.props.currentFace} flipped={this.state.flipped} />
 				<Buttons flipped={this.state.flipped} flipCard={this.flipCard} />
 			</div>
 		);
