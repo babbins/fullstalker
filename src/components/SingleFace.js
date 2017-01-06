@@ -2,7 +2,9 @@ import React from 'react';
 
 export default (props) => (
 	<div>
-		{ props.flipped && props.currentName }
-		<img src={ this.props.currentFace } />
+		<h1>
+			{ props.flipped && props.currentName }
+		</h1>
+		<img src={ props.currentFace } />
 	</div>
 );

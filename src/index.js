@@ -10,6 +10,8 @@ class App extends Component {
 	constructor() {
 		super();
 		this.state = {
+			currentName: 'Sophia',
+			currentFace: '/media/sophia.png',
 		}
 	}
 
@@ -18,7 +20,7 @@ class App extends Component {
 			<div>
 				{ this.props.children }
 			</div>
-		)
+		);
 	}
 }
 
@@ -29,6 +31,10 @@ ReactDOM.render(
       <Route path="/" component={App}>
         <Route path="/start" component={Start}/>
         <IndexRedirect to="/start"/>
+<<<<<<< HEAD
 				<Route path="/flashcard" component={Flashcard}/>
+=======
+				<Route path="/flashcard" component={Flashcard} currentName={this.state.currentName} currentFace={this.state.currentState}/>
+>>>>>>> 76642c6aaa38ad30fdcd63ec99449e709b5820b2
       </Route>
   </Router>, document.querySelector('.container'));
