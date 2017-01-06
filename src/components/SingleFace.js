@@ -7,7 +7,7 @@ export default (props) => (
         ?
         <h1 className="singlename">{ props.currentName }</h1>
         :
-        <img src={ props.currentFace } />
+        <img  height="500px" src={ props.currentFace } />
       }
     </div>
 	</div>

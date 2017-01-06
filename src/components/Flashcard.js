@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router';
 import SingleFace from './SingleFace';
 import Buttons from './Buttons';
 
@@ -46,18 +47,20 @@ class Flashcard extends Component {
 					<br />
 					<br />
 					<div className="col s2">
-						<a className="btn-floating btn-large waves-effect waves-light amber darken-3">
-							<i className="material-icons">chevron_left</i>
-						</a>
+						<Link to="/start">
+							<button className="btn-floating btn-large waves-effect waves-light amber darken-3">
+								<i className="material-icons">home</i>
+							</button>
+						</Link>
 					</div>
 					<div className="col s8">
 						<SingleFace currentName={this.state.currentName} currentFace={this.state.currentFace} flipped={this.state.flipped} />
 						<Buttons setRandomCurrent={this.setRandomCurrent} flipped={this.state.flipped} flipCard={this.flipCard} />
 					</div>
 					<div className="col s2">
-						<a className="btn-floating btn-large waves-effect waves-light amber darken-3">
+						<button onClick={this.setRandomCurrent} className="btn-floating btn-large waves-effect waves-light amber darken-3">
 							<i className="material-icons">chevron_right</i>
-						</a>
+						</button>
 					</div>
 				</div>
 			</div>

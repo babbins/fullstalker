@@ -10,7 +10,7 @@ export default (props) => (
 						? (<button className="btn amber darken-3" onClick={props.flipCard}>FLIP</button>)
 						: (
 								<div>
-									<button className="btn" onClick={props.setRandomCurrent}>X</button> <button className="btn" onClick={props.setRandomCurrent}>O</button>
+									<button className="btn amber darken-3" onClick={props.setRandomCurrent}>X</button> <button className="btn amber darken-3" onClick={props.setRandomCurrent}>O</button>
 								</div>
 						  )
 				}
