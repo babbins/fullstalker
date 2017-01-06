@@ -10,8 +10,6 @@ class App extends Component {
 	constructor() {
 		super();
 		this.state = {
-			currentName: 'Sophia',
-			currentFace: '/media/sophia.png',
 		}
 	}
 
