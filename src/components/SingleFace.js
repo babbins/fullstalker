@@ -1,10 +1,12 @@
 import React from 'react';
 
 export default (props) => (
-	<div>
-		<h1>
-			{ props.flipped && props.currentName }
-		</h1>
-		<img src={ props.currentFace } />
+	<div className={props.flipped ? 'flip-container-flipped' : 'flip-container'}>
+		<div className='flipper'>
+			<div className='front'></div>
+			<div className='back'>
+				<h1 className='answer'>{props.currentName}</h1>
+			</div>
+		</div>
 	</div>
 );
