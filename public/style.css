@@ -30,20 +30,19 @@
   -moz-perspective: 1000;
   -o-perspective: 1000;
   perspective: 1000;
-
-   border: 1px solid #ccc;
 }
 
 .flip-container-flipped .flipper {
-      -webkit-transform: rotateY(180deg);
-      -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-      transform: rotateY(180deg);
-   }
+   -webkit-transform: rotateY(180deg);
+   -moz-transform: rotateY(180deg);
+   -o-transform: rotateY(180deg);
+   transform: rotateY(180deg);
+}
 
 .flip-container, .flip-container-flipped, .front, .back {
-   width: 320px;
-   height: 427px;
+   width: 572px;
+   height: 572px;
+   margin: 0 auto;
 }
 
 .flipper {
@@ -106,7 +105,10 @@
 }
 
 .answer {
-   margin: auto;
+   margin-top: 450px;
+   color: #ef6c00;
+   font-size: 5em;
+   font-weight: 500;
 }
 
 .singlename {

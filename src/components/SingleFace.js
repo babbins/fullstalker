@@ -7,7 +7,7 @@ export default (props) => (
   			<div className='flipper'>
 					<div className='front'></div>
 					<div className='back'>
-						<h1 className='answer'>{props.currentName}</h1>
+						<p className='answer'>{props.currentName}</p>
 					</div>
 				</div>
     	</div>
