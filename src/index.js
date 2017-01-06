@@ -18,6 +18,7 @@ class App extends Component {
 		axios.get('/api/people')
 			.then(res => res.data)
 			.then(people => {
+				console.log(people);
 				this.setState({
 					people
 				});

@@ -11,6 +11,9 @@ class Flashcard extends Component {
 		this.state = {
 			currentName: 'Sophia',
 			currentFace: '/media/sophia.png',
+			address: '',
+			worth: '',
+			email: '',
 			flipped: false
 		};
 
@@ -31,6 +34,9 @@ class Flashcard extends Component {
 			this.setState({
 				currentName: randomPerson.name,
 				currentFace: randomPerson.imgUrl,
+				worth: randomPerson.worth,
+				email: randomPerson.email,
+				address: randomPerson.address,
 				flipped: false
 			});
 		}
