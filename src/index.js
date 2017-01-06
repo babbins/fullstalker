@@ -11,8 +11,6 @@ class App extends Component {
 	constructor() {
 		super();
 		this.state = {
-			currentName: 'Sophia',
-			currentFace: '/media/sophia.png',
 			people: []
 		}
 	}
@@ -26,10 +24,11 @@ class App extends Component {
 			})
 	}
 	render() {
-		console.log(this.state);
+		const props = Object.assign({}, this.state);
 		return (
 			<div>
-				{ this.props.children }
+			 { this.props.children && React.cloneElement(this.props.children, props) }
+
 			</div>
 		);
 	}
