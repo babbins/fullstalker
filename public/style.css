@@ -30,8 +30,6 @@
   -moz-perspective: 1000;
   -o-perspective: 1000;
   perspective: 1000;
-
-   border: 1px solid #ccc;
 }
 
 .flip-container-flipped .flipper {
@@ -42,8 +40,8 @@
    }
 
 .flip-container, .flip-container-flipped, .front, .back {
-   width: 320px;
-   height: 427px;
+   width: 572px;
+   height: 572px;
 }
 
 .flipper {
@@ -52,7 +50,7 @@
 
    -moz-transition: 0.6s;
    -moz-transform-style: preserve-3d;
-  
+
   -o-transition: 0.6s;
    -o-transform-style: preserve-3d;
 
@@ -73,7 +71,6 @@
 }
 
 .front {
-   background: url(/media/sophia.png) 0 0 no-repeat;
    z-index: 2;
 }
 
@@ -82,8 +79,7 @@
    -moz-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
    transform: rotateY(180deg);
-
-   background: url(/media/sophia.png) 0 0 no-repeat;
+   background: white;
 }
 
 .front .name {

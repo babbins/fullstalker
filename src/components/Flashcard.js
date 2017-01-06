@@ -28,6 +28,7 @@ class Flashcard extends Component {
 	setRandomCurrent() {
 		const {people} = this.props;
 		const randomPerson = people[Math.floor( people.length * Math.random())];
+		console.log(randomPerson);
 		if (this.state.currentName === randomPerson.name) {
 			this.setRandomCurrent();
 		} else {
@@ -64,7 +65,7 @@ class Flashcard extends Component {
 						</Link>
 					</div>
 					<div className="col s8">
-						<SingleFace currentName={this.state.currentName} currentFace={this.state.currentFace} flipped={this.state.flipped} />
+						<SingleFace currentName={this.state.currentName} email={this.state.email} worth={this.state.worth} address={this.state.address} currentFace={this.state.currentFace} flipped={this.state.flipped} />
 						<br />
 						<br />
 						<Buttons setRandomCurrent={this.setRandomCurrent} flipped={this.state.flipped} flipCard={this.flipCard} />
