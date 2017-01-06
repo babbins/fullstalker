@@ -19,3 +19,8 @@
             0% {opacity: 1;}
             100% {opacity: 0;}
          }
+
+#logo {
+  height: 500px;
+  display: block;
+}
