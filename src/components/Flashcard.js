@@ -43,7 +43,7 @@ class Flashcard extends Component {
 		return (
 			<div>
 				<div className="row center">
-					<img src="/media/logo/logo-text_only.png"
+					<img src="/media/logo/logo-text_only.png">
 					<br />
 					<br />
 					<div className="col s2">
