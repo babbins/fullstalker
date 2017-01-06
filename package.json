@@ -35,6 +35,8 @@
     "react-redux": "^4.0.0",
     "react-router": "^2.0.1",
     "redux": "^3.0.4",
+    "serve-favicon": "^2.3.2",
+    "volleyball": "^1.4.1",
     "youtube-api-search": "0.0.5"
   }
 }

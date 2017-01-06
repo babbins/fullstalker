@@ -30,7 +30,8 @@ app.use(function (req, res, next) {
 });
 
 app.get('/*', function (req, res) {
-    res.sendFile(app.get('indexHTMLPath'));
+    console.log('handling');
+    res.sendFile(path.join(__dirname, '../../index.html'));
 });
 
 // Error catching endware.
