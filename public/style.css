@@ -24,3 +24,11 @@
   height: 500px;
   display: block;
 }
+
+.singlename {
+   font-weight: 500;
+}
+
+.start-text {
+   font-weight: 200;
+}
