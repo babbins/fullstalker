@@ -14,6 +14,25 @@ class Flashcard extends Component {
 		};
 
 		this.flipCard = this.flipCard.bind(this);
+		this.setRandomCurrent = this.setRandomCurrent.bind(this);
+	}
+
+	componentDidMount() {
+		this.setRandomCurrent();
+	}
+
+	setRandomCurrent() {
+		const {people} = this.props;
+		const randomPerson = people[Math.floor( people.length * Math.random())];
+		if (this.state.currentName === randomPerson.name) {
+			this.setRandomCurrent();
+		} else {
+			this.setState({
+				currentName: randomPerson.name,
+				currentFace: randomPerson.imgUrl,
+				flipped: false
+			});
+		}
 	}
 
 	flipCard() {
@@ -23,8 +42,24 @@ class Flashcard extends Component {
 	render() {
 		return (
 			<div>
-				<SingleFace currentName={this.state.currentName} currentFace={this.state.currentFace} flipped={this.state.flipped} />
-				<Buttons flipped={this.state.flipped} flipCard={this.flipCard} />
+				<div className="row center">
+					<br />
+					<br />
+					<div className="col s2">
+						<a className="btn-floating btn-large waves-effect waves-light amber darken-3">
+							<i className="material-icons">chevron_left</i>
+						</a>
+					</div>
+					<div className="col s8">
+						<SingleFace currentName={this.state.currentName} currentFace={this.state.currentFace} flipped={this.state.flipped} />
+						<Buttons setRandomCurrent={this.setRandomCurrent} flipped={this.state.flipped} flipCard={this.flipCard} />
+					</div>
+					<div className="col s2">
+						<a className="btn-floating btn-large waves-effect waves-light amber darken-3">
+							<i className="material-icons">chevron_right</i>
+						</a>
+					</div>
+				</div>
 			</div>
 		);
 	}
