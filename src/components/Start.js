@@ -14,7 +14,7 @@ export default () => (
         <div>
           Fullstalkr will help you learn the names of the many faces of Fullstack and Grace Hopper Academy!
         </div>
-        <Link to="/flashcards">
+        <Link to="/flashcard">
   	     <button className="waves-effect waves-light btn-large amber darken-3">Begin!</button>
         </Link>
       </div>
