@@ -41,6 +41,6 @@ ReactDOM.render(
       <Route path="/" component={App}>
         <Route path="/start" component={Start}/>
         <IndexRedirect to="/start"/>
-				<Route path="/flashcard" component={Flashcard}/>
+				<Route path="/flashcard" component={Flashcard} />
       </Route>
   </Router>, document.querySelector('.container'));
