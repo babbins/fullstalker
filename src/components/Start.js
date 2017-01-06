@@ -16,7 +16,7 @@ export default () => (
       <div className="valgin col s5 center">
         <div className="start-text">
           <h5>
-          Fullstalkr will help you learn the names of the many faces of Fullstack and Grace Hopper Academy!
+          Fullstalkr will learn you the names of the many faces of Fullstack and Grace Hopper Academy!
           </h5>
         </div>
         <Link to="/flashcard">
