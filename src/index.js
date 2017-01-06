@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import {Router, Route, hashHistory, IndexRedirect, IndexRoute} from 'react-router';
 import ReactDOM from 'react-dom';
 import Start from './components/Start';
@@ -10,10 +11,20 @@ class App extends Component {
 	constructor() {
 		super();
 		this.state = {
+			people: []
 		}
 	}
-
+	componentDidMount() {
+		axios.get('/api/people')
+			.then(res => res.data)
+			.then(people => {
+				this.setState({
+					people
+				});
+			})
+	}
 	render() {
+		console.log(this.state);
 		return (
 			<div>
 				{ this.props.children }
