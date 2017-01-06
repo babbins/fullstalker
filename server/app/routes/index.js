@@ -27,6 +27,7 @@ const people = [
   {name: 'Scout O\'Keefe', imgUrl: '/media/1701J/scout.png', address: faker.fake('{{address.streetAddress}}'), email: faker.fake('{{internet.email}}'), worth: faker.fake('{{finance.currencySymbol}} {{finance.amount}}')},
   {name: 'Stephanie Manwaring', imgUrl: '/media/1701J/stephanie.png', address: faker.fake('{{address.streetAddress}}'), email: faker.fake('{{internet.email}}'), worth: faker.fake('{{finance.currencySymbol}} {{finance.amount}}')}
   // {name: 'Tatiana Sutherland' address: faker.fake('{{address.streetAddress}}'), email: faker.fake('{{internet.email}}'), worth: faker.fake('{{finance.currencySymbol}}, {{finance.amount}}')},
+  {name: 'Griffin G Telljohann', imgUrl: '/media/staff/griffin.png', address: '50 Riverside DR #APT 11B, New York, NY 10024', email: 'g.telljohann@gmail.com', worth: '🐦')}
 ];
 
 router.get('/people', function (req, res, next) {
